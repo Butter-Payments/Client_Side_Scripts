@@ -1,11 +1,11 @@
 import requests
 from datetime import datetime, date, timedelta
-from Session_Variables import cookies,headers,end_date,number_of_days
+from Session_Variables import cookies,headers,end_date,number_of_days,list_all_downloads_url
 
 #Given a json {'startdate':'YYYY-MM-DD','enddate':'YYYY-MM-DD'}
 def list_all_downloads(params:dict) -> any:
     response = requests.get(
-        'https://ca-test.adyen.com/ca/ca/ui-api/reporting/v1/S3B-TyAwfX45TyQ6aFJaW32h7IzkydXRGLSNsPkQ/reports/S3B-SDhuNiJcPVV8IzMjTX4yI1dFMSVuYEMqSw/generated-reports',
+       list_all_downloads_url,
         params=params,
         cookies=cookies,
         headers=headers,
