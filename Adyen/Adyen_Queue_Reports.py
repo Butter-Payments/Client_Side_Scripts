@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime, date, timedelta
-from Session_Variables import cookies,headers,number_of_days,end_date
+from Session_Variables import cookies,headers,number_of_days,end_date,report_generation_url
 
 def json_request(day_of_report:str) -> dict:
     post_request = {
@@ -13,7 +13,7 @@ def json_request(day_of_report:str) -> dict:
 
 def queue_report_generation(json_data:dict) -> any :
     response = requests.post(
-        'https://ca-test.adyen.com/ca/ca/ui-api/reporting/v1/S3B-TyAwfX45TyQ6aFJaW32h7IzkydXRGLSNsPkQ/reports/S3B-SDhuNiJcPVV8IzMjTX4yI1dFMSVuYEMqSw:queue',
+        report_generation_url,
         cookies=cookies,
         headers=headers,
         json=json_data,
