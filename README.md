@@ -91,22 +91,29 @@ The associated scripts are built by the Butter team to leverage a headless user 
         The URL for this is [https://ca-test.adyen.com/ca/ca/overview/default.shtml](https://ca-test.adyen.com/ca/ca/overview/default.shtml).<br/>
         This means that the base URL for a Butter engineer would be **`ca-test.adyen.com`**.
         <br />
+
 19. Run the command `python Adyen_Queue_Reports.py`
     1. This will request Adyen to generate the reports and prepare them for download
     2. This can take some time for them to actually create data
     3. “Queued Failure”can mean no data available or already generated
     <br />
+
 20. Wait for the execution of the `Adyen_Queue_Reports.py` python script to complete.
 <br />
+
 21. Run the command `python Adyen_Download_Reports.py`
     1. This will download the reports that have been generated for each day that falls between the value set for `end_date` and the number of days prior to the end date, which can be found in the `number_of_days` variable.
     <br />
+
 22. Wait for the execution of the `Adyen_Download_Reports.py` python script to complete.
 <br />
+
 23. Observe that the files have been downloaded into the same directory from where the Python scripts were stored and executed.
 <br />
+
 24. Confirm that the downloads were successful by manually downloading one of the reports, and comparing it to the matching report found in the folder where script downloaded the bulk files.
 <br />
+
 25. You’re all done and ready to share the reports!
 
 ## Sharing the Reports
