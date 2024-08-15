@@ -45,11 +45,7 @@ The associated scripts are built by the Butter team to leverage a headless user 
 13. Set the `number_of_days` variable to the number of days for which we want to generate and download reports
     1. This value needs to be an integer above 0
 14. Set the `end_date` variable to reflect the current date, following the format of YYYY-MM-DD. (Example: August 14, 2024 would be represented as 2024-08-14)
-15. Configure your base download URL:
-    1. To find base url for example:
-    2. https://ca-test.adyen.com/ca/ca/overview/default.shtml
-    3. Our base URL would be [ca-test.adyen.com](https://ca-test.adyen.com/ca/ca/overview/default.shtml)
-16. Make sure that Python 3.10.x is installed
+15. Make sure that Python 3.10.x is installed
     1. Instructions for Mac OS users:
         1. Ensure your system has Homebrew installed for package management. It can be found at [https://brew.sh](https://brew.sh/)
         2. Use the following homebrew command to install the Python version
@@ -74,9 +70,14 @@ The associated scripts are built by the Butter team to leverage a headless user 
         </aside>
         
         1. Type **exit()** to quit.
-17. Make sure that any required python dependencies are installed.
+16. Make sure that any required python dependencies are installed.
     1. Run the command `pip install requests`
-18. Use the terminal to navigate to the directory where you downloaded all of the scripts.
+17. Use the terminal to navigate to the directory where you downloaded all of the scripts.
+18. Configure your base download URL by setting the `base_url` variable in the `Session_Variables.py` file:
+    1. Your base URL can be found as part of the full URL of any page **after** you have logged in to your Adyen custome area.
+    2. For example, when Butter's engineers log in to their Adyen customer area, they are taken to the default overview (home) page of the dashboard.<br />
+        The URL for this is [https://ca-test.adyen.com/ca/ca/overview/default.shtml](https://ca-test.adyen.com/ca/ca/overview/default.shtml).<br/>
+        This means that the base URL for a Butter engineer would be **`ca-test.adyen.com`**.
 19. Run the command `python Adyen_Queue_Reports.py`
     1. This will request Adyen to generate the reports and prepare them for download
     2. This can take some time for them to actually create data
