@@ -2,9 +2,9 @@ The associated scripts are built by the Butter team to leverage a headless user 
 
 **Prerequisite:** Download each of the following scripts from the relevant Butter repository on GitHub, and place them all into the same local directory on your computer:
 
-1. Adyen_Queue_Reports.py
-2. Adyen_Download_Reports.py
-3. Session_Variables.py
+1. [Adyen_Queue_Reports.py](/adyen/Adyen_Queue_Reports.py)
+2. [Adyen_Download_Reports.py](/adyen/Adyen_Download_Reports.py)
+3. [Session_Variables.py](/adyen/Session_Variables.py)
 
 ## Follow the numbered steps below to configure and run the scripts...
 
