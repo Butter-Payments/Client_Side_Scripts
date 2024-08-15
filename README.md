@@ -84,6 +84,7 @@ The associated scripts are built by the Butter team to leverage a headless user 
     <br />
 17. Use the terminal to navigate to the directory where you downloaded all of the scripts.
 <br />
+
 18. Configure your base download URL by setting the `base_url` variable in the `Session_Variables.py` file:
     1. Your base URL can be found as part of the full URL of any page **after** you have logged in to your Adyen custome area.
     2. For example, when Butter's engineers log in to their Adyen customer area, they are taken to the default overview (home) page of the dashboard.<br />
