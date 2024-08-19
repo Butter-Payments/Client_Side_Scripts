@@ -34,7 +34,7 @@ to_date = "2024-01-02"
 
 # Please replace <INSERT STRIPE API KEY> with your actual Stripe API key
 downloader = StripeDownloader(
-    api_key="sk_test_4eC39HqLyjWDarjtT1zdp7dc",
+    api_key="",
     # Valid object types here are: "Charge", "Coupon", "Customer", "Dispute", "Event", "Invoice", "PaymentIntent", "Payout", "Plan", "Price", "Product", "Refund", "Subscription"
     object_type="Dispute",
 )
